@@ -1,0 +1,475 @@
+:root {
+	--color_white: #fff;
+	--color_black: #000;
+	--color_yellow: #FBB448;
+	--color_blue: #eaf0ff;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, {
+ /* 	font-weight: 400; */
+ 	margin: 0 0 20px 0;
+ 	text-transform: uppercase;
+}
+
+p {
+	padding: 5px;
+	font-family: 'Playfair Display', serif;
+}
+h1 {	
+	font-size: 44px;
+/* 	font-weight: 600; */
+	color: var(--color_white);
+	text-transform: uppercase;
+	font-family: 'Dancing Script', cursive;
+}
+h2 {
+	font-family: 'Nanum Myeongjo', serif;
+}
+h3 {
+	color: var(--color_yellow);
+	padding: 10px;
+}
+
+h4 {
+	padding: 10px;
+	font-size: 15px;
+	color: var(--color_black);
+	letter-spacing: 0.5px;
+}
+.name {
+	font-family: 'Nanum Pen Script', cursive;
+	font-size: 30px;
+}
+
+.btn_up {
+	color: var(--color_black);
+}
+.btn {
+	color: var(--color_white);
+}
+.btn,
+.btn_up {
+	display: inline-block;
+	background-color: inherit;
+	outline: none;
+	font-size: 13px;
+	text-transform: uppercase;
+	font-weight: 500;
+	padding: 12px 20px;
+	border-radius: 3px;
+	text-decoration: none;
+	letter-spacing: 0.5px;
+}
+/* =====================header===================== */
+.navigation {
+	border: 1px solid;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: var(--color_blue);
+}
+.top_menu {
+	padding: 0;
+	margin: 0;
+}
+.menu_trigger {
+	display: none;
+	text-align: right;
+	text-decoration: none;
+	color: var(--color_black);
+	font-size: 30px;
+	padding: 10px;
+}
+
+nav ul li {
+	display: inline-block;
+	list-style: none;
+}
+
+ul li a {
+	text-decoration: none;
+	padding: 15px;
+	color: var(--color_black);
+	display: block;
+}
+
+ul li a:hover {
+	color: var(--color_yellow);
+}
+
+
+
+
+/* =====================bg_header===================== */
+.bg_header {
+	/* height: 600px; */
+	background-image: url(img/banner-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: auto;
+	background-position: center;
+	text-align: center;
+
+}
+
+.bg_header_banner {
+	text-align: center;
+	color: var(--color_white);
+	margin: 0 auto;
+	line-height: 2;
+	padding: 80px;
+}
+
+/* =====================we_cook===================== */
+.we_cook {
+	padding: 150px 0;
+}
+.wrap {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+}
+.we_cook_col {
+	width: 300px;
+/* 	height: 225px;
+display: flex;
+    align-items: center;
+    flex-direction: column; */
+}
+.we_cook_col img {
+	width: 100%;
+	height: auto;
+}
+
+
+/* =====================menu===================== */
+.menu_colum {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.menu h4 {
+	color: #000;
+	padding: 20px;
+}
+.menu_col {
+	margin: 30px;
+	cursor: pointer;
+
+}
+.menu_col img {
+	border: 10px solid #eaf0ff;
+	border-radius: 50%;
+}
+/* =====================dishes===================== */
+.dishes {
+	text-align: center;
+	margin: 50px 0;
+}
+.dishes_wrap {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+}
+
+.dishes_col {
+	width: 300px;
+	margin: 10px;
+	height: auto;
+	overflow: hidden;
+	position: relative;
+}
+.dishes_col:hover {
+	-webkit-box-shadow: 0px 0px 10px 1px rgba(87,83,87,1);
+	-moz-box-shadow: 0px 0px 10px 1px rgba(87,83,87,1);
+	box-shadow: 0px 0px 10px 1px rgba(87,83,87,1);
+}
+.dishes_colums {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.dishes_text {
+	position: relative;
+	padding: 10px;
+}
+.aaa {
+	height: 30px;
+position: absolute;
+	background: red;
+	transform: rotate(4deg);
+}
+.dishes_imege {
+	overflow: hidden;
+}
+.dishes h2 {
+	padding: 20px 0;
+	color: var(--color_yellow);
+	font-size: 30px;
+}
+
+.dishes_col img {
+	width: 100%;
+	height: auto;
+
+}
+.dishes_col img:hover {
+	transform: scale(1.1);
+	transition: all 1.3s;
+
+}
+.dishes .price {
+	font-size: 30px;
+	color: var(--color_yellow);
+/* 	margin: 10px; */
+}
+/* =====================book_table===================== */
+.book_table {
+	background-image: url(img/book-bg.jpg);
+	background-position: 100% 100%;
+	background-repeat: no-repeat;
+	padding: 80px 0px;
+	background-size: cover;
+/* 	background-position: center center; */
+	text-align: center;
+}
+
+.wrap img {
+	width: 100%;
+	height: auto;
+}
+.reserv {
+	background-color: var(--color_white);
+	height: 300px;
+	width: 390px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	flex-direction: column;
+	box-sizing: border-box;
+}
+.reserv h4 {
+	color: var(--color_black);
+	display: block;
+	padding: 10px;
+}
+.book_table_reserv {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+form {
+	padding: 10px;
+}
+form select {
+	width: 150px;
+	height: 30px;
+	text-align: center;
+	background-color: var(--color_yellow);
+	font-size: 15px;
+}
+.book_table_contact {
+	padding: 10px;
+}
+.book_table_contact input {
+	width: 150px;
+	height: 30px;
+	font-size: 15px;
+	margin: 10px 5px ;
+	border: none;
+	outline: none;
+	background-color: inherit;
+	border-bottom: 1px solid var(--color_yellow);
+}
+form input:required:valid {
+  border-color: green;
+}
+form input:required:invalid {
+  border-color: red;
+}
+.reserv button {
+	padding: 5px;
+	width: 100px;
+	margin: 0 auto;
+	border-radius: 3px;
+	outline: none;
+	border: 2px solid var(--color_black);
+	background-color: var(--color_yellow);
+}
+
+/* =====================seervices===================== */
+
+.seervices {
+	background-color: var(--color_blue);
+	padding: 50px 10px;
+}
+.seervices_wrap {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+}
+.seervices_colum {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.seervices_col {
+	width: 250px;
+	padding: 10px;
+	margin: 10px 20px;
+}
+.seervices_col img {
+	width: 50px;
+	padding: 20px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	background-color: var(--color_yellow);
+}
+
+/* =====================signup===================== */
+.signup {
+	background-image: url(img/signup-bg.jpg);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	padding: 50px 10px;
+}
+.signup_wrap {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
+}
+.signup h3 {
+	color: var(--color_white);
+}
+.signup input {
+	width: 280px;
+	height: 40px;
+	border: 2px;
+	border-radius: 3px;
+	margin: 10px 10px;
+	padding: 2px 15px;
+	background-color: rgba(250, 250, 250, 0.9);
+	outline: none;
+}
+/* =====================footer===================== */
+
+.footer {
+	background-color: #363e50;
+	line-height: 50px;
+	text-align: center;
+	color: var(--color_white);
+}
+.footer_wrap {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	text-align: center;
+	align-items: center;
+}
+.icon a {
+	text-decoration: none;
+	color: #fff;
+	padding: 0 20px;
+}
+.icon a {
+	font-size: 20px;
+	padding: 10px;
+	color: #fff;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+h1, h2, h3, h4, h5, h6, {
+ 	font-weight: 100;
+}
+h1 {	
+	font-size: 20px;
+	font-weight: 200;
+}
+.name {
+	font-size: 15px;
+	display: none;
+}
+nav {
+	width: 100%;
+}
+
+nav ul li {
+	display: block;
+	text-align: center;
+}
+ul li a {
+	border-bottom: 1px solid #000;
+}
+.menu_trigger {
+	display: block;
+	text-align: right;
+	height: 40px;
+}
+nav ul {
+	display: none;
+}
+
+.bg_header_banner {
+	line-height: 1;
+	padding: 10px;
+}
+.we_cook {
+    padding: 10px 0;
+    background-color: var(--color_blue);
+}
+.wrap {
+	flex-direction: column;
+}
+.we_cook_col {
+	width: 300px;
+	height: 225px;
+}
+.reserv {
+    background-color: var(--color_white);
+    padding: 10px 0;
+    height: auto;
+    width: auto;
+}
+.reserv h4 {
+	color: var(--color_white);
+}
+.book_table_contact input {
+	color: var(--color_white);
+}
+.reserv_picture {
+	display: none;
+}
+.book_table img {
+	display: none;
+}
+.reserv {
+	background-color: inherit;
+}
+.book_table_reserv {
+	justify-content: center;
+}
+.signup input {
+	width: 200px;
+}
+}
